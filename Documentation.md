@@ -41,6 +41,7 @@
 
 3. Now we are going to input the Public IP address for our web server. Fill out the fields as described below:
 	| Field | Input value |
+	|-------|-------------|
 	| Type | A |
 	| Name | leave blank or use @ |
 	| Points to | Your Public IP address, eg 1.54.203.14 |
