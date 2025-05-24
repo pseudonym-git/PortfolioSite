@@ -30,3 +30,29 @@
 4. These commands will install Apache, start the web server, and enable automatic start up of Apache as long as the EC2 Instance is running
 5. We should now see the Apache default start page when navigating to the EC2 instance's public IP address.
 	- Note that this will not yet be secured with HTTPS, we will set this up in the next step
+
+
+# Step 2.5. Registering a Domain and Pointing it to your site
+- This step can be completed at any point in the process, and ideally the earlier the better, as some aspects will take time, eg DNS Propogation
+
+1. I've used Hostinger to register my domain, but you can use any domain registrar, the process should be similar for all providers
+
+2. Select the domain you are using for your website and choose "Manage" and then "DNS/Name Servers"
+
+3. Now we are going to input the Public IP address for our web server. Fill out the fields as described below:
+	| Field | Input value |
+	| Type | A |
+	| Name | leave blank or use @ |
+	| Points to | Your Public IP address, eg 1.54.203.14 |
+	| TTL | 14400 |
+
+4. Select "Add Record"
+
+5. Make sure to remove any other A records from the list, having more than 1 may cause problems when using the domain to connect to your server
+
+- After you've added the record this will take time to be reflected in DNS servers, meaning you may not be able to connect to your web server using that domain name immediately. I recommend doing this step last thing at night, then resuming the next day. 
+
+
+# Step 3. Setting up HTTPS on your web server
+
+1. 
