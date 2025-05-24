@@ -23,8 +23,8 @@
 
 3. Use the below commands to install Apache, we are going to use this to set up our domain and to HTTPS
 
-	`sudo apt install apache2 -y 
-	`sudo systemctl start apache2 
+	`sudo apt install apache2 -y'
+	`sudo systemctl start apache2'
 	`sudo systemctl enable apache2`
 
 4. These commands will install Apache, start the web server, and enable automatic start up of Apache as long as the EC2 Instance is running
@@ -55,5 +55,8 @@
 
 
 # Step 3. Setting up HTTPS on your web server
+- Before starting this step, make sure DNS propogation has finished. Try navigating to your site using the domain name, if you can connect, all good to continue.
 
-1. 
+- Note: I'm going to do something a bit different here in the interests of being resilient against change to Certbot. This is the direct link to the Certbot Instructions page I've followed for my web server, including the software and the platform I'm running the server on: [LINK](https://certbot.eff.org/instructions?ws=apache&os=pip). 
+
+Navigating to this link ensures that you are using the most up to date instructions for our set up.
