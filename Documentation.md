@@ -92,4 +92,4 @@ From here, we will effectively be following the Hugo documentation, from which I
 
 1. The 1st step is to use `git clone x` where x is the https link to your repo
 
-2. Then `cd portfolio` to enter the repo, and run the command `hugo new site portfolio` (portfolio will be the name of the site in this instance)
+2. Then `cd` into the repo, and run the command `hugo new site portfolio` (portfolio will be the name of the site in this instance)
