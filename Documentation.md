@@ -90,6 +90,6 @@ From here, we will effectively be following the Hugo documentation, from which I
 
 # Step 5. Creating your Hugo Site
 
-1. The 1st step is to run the command `hugo new site portfolio` (portfolio will be the name of the site in this instance)
+1. The 1st step is to use `git clone x` where x is the https link to your repo
 
-2. Then `cd portfolio` to enter the new directory, and `git init` to initialise it as a git repo 
+2. Then `cd portfolio` to enter the repo, and run the command `hugo new site portfolio` (portfolio will be the name of the site in this instance)
