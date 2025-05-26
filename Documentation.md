@@ -60,3 +60,36 @@
 - Note: I'm going to do something a bit different here in the interests of being resilient against change to Certbot. This is the direct link to the Certbot Instructions page I've followed for my web server, including the software and the platform I'm running the server on: [LINK](https://certbot.eff.org/instructions?ws=apache&os=pip). 
 
 Navigating to this link ensures that you are using the most up to date instructions for our set up.
+
+
+# Step 4. Installing Hugo
+- Hugo is going to be our website building framework. I've chosen it mostly because it's free, and uses a permissive Apache 2.0 Licence. It also has the benefit of being relatively lightweight, which will be good for keeping within the limits of the free plan we've chosen.
+
+From here, we will effectively be following the Hugo documentation, from which I've pulled the following commands.
+
+1. Start by SSH-ing into your EC2 instance 
+2. as should be part of the usual connection routine, run the below command to update all packages:
+
+	`sudo apt update && sudo apt upgrade -y`
+
+3. Now that we are connected and updated, we'll install Hugo using Snap by running the below command:
+
+	`sudo snap install hugo`
+
+4. May or may not be applicable: Adding the path to the .bashrc file.
+	- If you try running the command "hugo version" and get an error here like me. Run the following commands to fix it:
+
+	`echo 'export PATH="/snap/bin:$PATH"' >> ~/.bashrc`
+
+	and 
+
+	`source `/.bashrc`
+
+	These commands will "teach" the ubuntu instance where the Hugo commands are.
+
+
+# Step 5. Creating your Hugo Site
+
+1. The 1st step is to run the command `hugo new site portfolio` (portfolio will be the name of the site in this instance)
+
+2. Then `cd portfolio` to enter the new directory, and `git init` to initialise it as a git repo 
