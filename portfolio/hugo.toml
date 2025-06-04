@@ -1,6 +1,6 @@
 baseURL = 'https://lurchingabomination.space/'
 languageCode = 'en-uk'
-title = 'Andrew\ McKenna'
+title = 'Andrew_McKenna'
 theme = 'risotto'
 author = "Andrew McKenna"
 
@@ -45,15 +45,15 @@ url = "mailto:portfoliowebsite.plenty168@aleeas.com"
 [menu]
 
   [[menu.main]]
-    identifier = "about_me"
-    name = "About"
-    url = "/about/"
+    identifier = "my_projects"
+    name = "my_projects"
+    url = "/my_projects/"
     weight = 10
 
   [[menu.main]]
     identifier = "blog"
-    name = "About"
-    url = "/about/"
+    name = "blog"
+    url = "/blog/"
     weight = 20
 
 [taxonomies]
