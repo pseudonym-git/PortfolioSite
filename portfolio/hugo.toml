@@ -1,6 +1,6 @@
 baseURL = 'https://lurchingabomination.space/'
 languageCode = 'en-uk'
-title = 'LurchingAbomination'
+title = 'Andrew\ McKenna'
 theme = 'risotto'
 author = "Andrew McKenna"
 
@@ -22,7 +22,7 @@ palette = "base16-dark"
 title = "About Me"
 description = "Hi, I'm Andrew, a 1st-ish year student at Murdoch University"
 # unicode/emoji logo:
-logo = "🍚"
+logo = "💻"
 # or use an image:
 #logo_image = "images/rice.svg"
 
@@ -39,20 +39,22 @@ url = "https://github.com/pseudonym-git"
 [[params.socialLinks]]
 icon = "fa-solid fa-envelope"
 title = "Email"
-url = "mailto:example@example.com"
+url = "mailto:portfoliowebsite.plenty168@aleeas.com"
 
-[[params.socialLinks]]
-icon = "ai ai-orcid"
-title = "ORCID"
-url = "https://orcid.org/0000-0001-2345-6789"
 
 [menu]
 
   [[menu.main]]
-    identifier = "about"
+    identifier = "about_me"
     name = "About"
     url = "/about/"
     weight = 10
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "About"
+    url = "/about/"
+    weight = 20
 
 [taxonomies]
 category = "categories"
@@ -71,30 +73,3 @@ unsafe = true
     startLevel = 2
     endLevel   = 3
     ordered    = true
-
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
