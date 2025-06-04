@@ -63,7 +63,7 @@ Navigating to this link ensures that you are using the most up to date instructi
 
 
 # Step 4. Installing Hugo
-- Hugo is going to be our website building framework. I've chosen it mostly because it's free, and uses a permissive Apache 2.0 Licence. It also has the benefit of being relatively lightweight, which will be good for keeping within the limits of the free plan we've chosen.
+- Hugo is going to be our website building framework. I've chosen it mostly because it's free, and uses a permissive Apache 2.0 Licence. The other really cool thing about Hugo is that pages are build based on .md or markdown files, something that makes it really easy to add and maintain content. Finally, it also has the benefit of being relatively lightweight, which will be good for keeping within the limits of the free plan we've chosen.
 
 From here, we will effectively be following the Hugo documentation, from which I've pulled the following commands.
 

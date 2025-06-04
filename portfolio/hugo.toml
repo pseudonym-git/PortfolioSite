@@ -3,6 +3,7 @@ languageCode = 'en-uk'
 title = 'Andrew_McKenna'
 theme = 'risotto'
 author = "Andrew McKenna"
+copyright = "© Andrew McKenna. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 
 
 # Automatically add content sections to main menu
@@ -20,7 +21,7 @@ palette = "base16-dark"
 # Sidebar: about/bio
 [params.about]
 title = "About Me"
-description = "Hi, I'm Andrew, a 1st-ish year student at Murdoch University"
+description = "Hi, I'm Andrew, welcome to my portfolio website"
 # unicode/emoji logo:
 logo = "💻"
 # or use an image:
