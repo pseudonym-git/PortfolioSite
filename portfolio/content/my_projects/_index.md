@@ -5,8 +5,7 @@ title = 'My_projects'
 
 
 _Quick Links_
-- [Tandoor Recipe Manager](http://lordinateur:3663/)
-- [Open WebUi](http://lordinateur:3000/)
+[Tandoor Recipe Manager](http://lordinateur:3663/) | [Open WebUi](http://lordinateur:3000/)
 
 The above links are to my self hosted services, I'm using MagicDNS with [Tailscale](https://tailscale.com/) to manage access and allow me to access the services outsite my home.
 
