@@ -1,5 +1,5 @@
 baseURL = 'https://lurchingabomination.space/'
-languageCode = 'en-uk'
+languageCode = 'en'
 title = 'Andrew_McKenna'
 theme = 'risotto'
 author = "Andrew McKenna"
@@ -23,9 +23,9 @@ palette = "base16-dark"
 title = "About Me"
 description = "Hi, I'm Andrew, welcome to my portfolio website"
 # unicode/emoji logo:
-# logo = "💻"
+logo = "💻"
 # or use an image:
-logo_image = "images/me.jpg"
+# logo_image = "images/me.jpg"
 
 # Sidebar: social links
 # Available icon sets:
@@ -74,3 +74,7 @@ unsafe = true
     startLevel = 2
     endLevel   = 3
     ordered    = true
+
+
+[params]
+  customFooter = ""
