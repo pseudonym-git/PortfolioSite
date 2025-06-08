@@ -23,9 +23,9 @@ palette = "base16-dark"
 title = "About Me"
 description = "Hi, I'm Andrew, welcome to my portfolio website"
 # unicode/emoji logo:
-logo = "💻"
+# logo = "💻"
 # or use an image:
-#logo_image = "images/rice.svg"
+logo_image = "images/me.jpg"
 
 # Sidebar: social links
 # Available icon sets:

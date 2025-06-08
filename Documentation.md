@@ -121,4 +121,4 @@ From here, we will effectively be following the Hugo documentation, from which I
 
 1. in the portfolio directory, run the command `sudo cp -r public/* /var/www/html/` to copy the contents of the public directory into the root directory for the Apache web server, then the commands `sudo chown -R www-data:www-data /var/www/html/` and `sudo chmod -R 755 /var/www/html/` to make sure file access permissions are properly set up.
 
-2. 
+2. Please see Step 6.5 for a script to make the ongoing maintenance of this site much easier.
