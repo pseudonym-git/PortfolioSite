@@ -3,9 +3,8 @@ date = '2025-06-04T15:49:00+08:00'
 title = 'My_projects'
 +++
 
-# My Projects
 
-### G'day, this is where I'll be posting all the cool projects I complete
+# G'day, this is where I'll be posting all the cool projects I complete
 
 I have big plans for this one, including documenting:
 

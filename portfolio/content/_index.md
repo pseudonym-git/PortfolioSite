@@ -19,6 +19,8 @@ Outside of uni, I'm interested in:
 - Carpentry
 - Searching for ever more complex ways of doing simple things
 
+![This is me!](/images/me.jpg)
+
 ## My Projects
 
 Check out some of the homelab projects I've been working on in the [my_projects section](/my_projects/). 
