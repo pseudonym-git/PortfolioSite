@@ -19,8 +19,6 @@ Outside of uni, I'm interested in:
 - Carpentry
 - Searching for ever more complex ways of doing simple things
 
-![This is me!](/images/me.jpg)
-
 ## My Projects
 
 Check out some of the homelab projects I've been working on in the [my_projects section](/my_projects/). 
@@ -35,5 +33,8 @@ I'm currently working on an n8n automation which I'm hoping will take inputs fro
 ## My Blog
 
 If I ever come up with any ideas worth writing about, you'll be able to find it on my [blog](/blog/).
+
+
+![This is me!](/images/me.jpg)
 
 ---
