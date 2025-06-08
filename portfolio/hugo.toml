@@ -14,6 +14,7 @@ pagerSize = 3
 
 [params]
 noindex = false
+customFooter = ""
 
 [params.theme]
 palette = "base16-dark"
@@ -74,7 +75,3 @@ unsafe = true
     startLevel = 2
     endLevel   = 3
     ordered    = true
-
-
-[params]
-  customFooter = ""
