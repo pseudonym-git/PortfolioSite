@@ -122,3 +122,76 @@ From here, we will effectively be following the Hugo documentation, from which I
 1. in the portfolio directory, run the command `sudo cp -r public/* /var/www/html/` to copy the contents of the public directory into the root directory for the Apache web server, then the commands `sudo chown -R www-data:www-data /var/www/html/` and `sudo chmod -R 755 /var/www/html/` to make sure file access permissions are properly set up.
 
 2. Please see Step 6.5 for a script to make the ongoing maintenance of this site much easier.
+
+
+# Step 6.5 Site Publishing Script:
+
+1. Start by, after ssh-ing into your AWS instance, running the command `sudo nano /usr/local/bin/publish_portfolio`, to create the publish_portfolio script
+
+2. When the file opens, paste in the script below and save the file:
+
+`#!/bin/bash
+
+HUGO_SITE_PATH="/home/ubuntu/PortfolioSite/portfolio"
+APACHE_ROOT="/var/www/html"
+WEB_USER="www-data"
+
+echo "Starting..."
+
+cd "$HUGO_SITE_PATH" || exit 1
+
+git stash push -m "Auto-stash before deployment" -- public/ 2>/dev/null || true
+
+echo "Running git pull to pull the latest changes..."
+git pull origin main || {
+    echo "git pull failed"
+    exit 1
+}
+
+echo "Rebuilding site..."
+rm -rf public/
+hugo || {
+    echo "Hugo build failed, check error log"
+    exit 1
+}
+
+echo "Publishing site on Apache web server..."
+sudo rm -rf "$APACHE_ROOT"/*
+sudo cp -r public/* "$APACHE_ROOT/"
+sudo chown -R "$WEB_USER:$WEB_USER" "$APACHE_ROOT"
+sudo chmod -R 755 "$APACHE_ROOT"
+
+echo "Completed successfully!"
+echo "Portfolio website is available at https://lurchingabomination.space/"`
+
+4. Run the command `sudo chmod +x /usr/local/bin/publish_portfolio` to make the script executable. 
+
+5. This works by doing the following:
+	a. Navigate to the directory for the Hugo site
+	b. Discarding any local changes created as a result of the `hugo` command to build the site.
+	c. Run the command git pull to fetch any new changes from the main branch of the git repo
+	d. Deletes the existing public directory, then rebuilds it using teh `hugo` command to rebuild the site
+	e. Then automatically executes the instructions in step 6, point 1. 
+
+
+# Step 7. Ongoing Updates and Maintenance
+- Whenever you have changes added to the git repo, follow the below steps:
+
+1. ssh into the AWS instance
+2. Run this command: `sudo apt update && sudo apt upgrade -y` to update all packages and keep the instance up to date.
+3. Run the command `publish_portfolio` to pull the changes from Github
+
+
+# Step 8. Adding pages to the site.
+- Follow the below instructions when writing new articles/pages to be included in the my_projects or blog parent pages.
+
+1. Hugo new command:
+
+*For the my_projects section* 
+a. Run the command `hugo new my_projects/project_name.md` where you replace the text "project_name" with the name of your project post.
+
+*For the blog section*
+b. Run the command `hugo new blog/post_name.md` where you replace the text "post_name" with the name of your blog post.
+
+2. Edit the .md file using regular markdown text.
+
